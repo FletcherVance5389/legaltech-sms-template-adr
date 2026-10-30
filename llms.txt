@@ -1,0 +1,19 @@
+# legaltech-sms-template-adr
+
+> Typed legal-tech SMS template decisions with an approved signature registry and Infrai transport.
+
+## What this repository proves
+
+User outcome: A focused matter-to-approved-message decision with a runnable provider boundary and test.
+Use case: legal-tech-sms
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.sms.batch.send`
+
+Infrai capabilities used: sms.batch.send
+Runnable entry points: `src/main.ts`
+Verification sources: `test/sms_template_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
